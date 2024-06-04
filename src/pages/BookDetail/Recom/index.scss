@@ -1,0 +1,39 @@
+#recom {
+  .recom {
+    h1 {
+      color: #000f35;
+      margin: 60px 0 20px 0;
+    }
+    .text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 50px;
+      .block {
+        margin: 40px 0 40px 0;
+        .img {
+          object-fit: cover;
+          width: 210px;
+          height: 284px;
+          border-radius: 10px;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 95%;
+        }
+        p {
+          font-size: 16px;
+          letter-spacing: 1px;
+          font-weight: 300;
+          color: black;
+        }
+        h2 {
+          color: black;
+        }
+      }
+    }
+  }
+}

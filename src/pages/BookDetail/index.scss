@@ -1,0 +1,167 @@
+#bookDetail {
+  .bookDetail {
+    h1 {
+      font-size: 22px;
+      font-weight: 400;
+      color: #757575;
+      margin: 50px 0;
+      .span {
+        color: #757575;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          font-size: 23px;
+          transition: 0.3s;
+        }
+      }
+      .span1 {
+        color: #757575;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          font-size: 23px;
+          transition: 0.3s;
+        }
+      }
+      span {
+        color: black;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          font-size: 23px;
+          transition: 0.3s;
+        }
+      }
+    }
+    .text {
+      display: flex;
+
+      img {
+        object-fit: cover;
+        border-radius: 5px;
+        width: 400px;
+        height: 600px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+      }
+      .block {
+        h1 {
+          font-size: 38px;
+          margin: 0;
+          width: 700px;
+          color: #010049;
+        }
+        .price {
+          font-size: 28px;
+          margin: 0;
+          width: 500px;
+          color: #010049;
+          margin: 10px 0 30px 0;
+        }
+        h2 {
+          font-size: 22px;
+          font-weight: 400;
+          color: #757575;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          color: #757575;
+          margin: 10px 0 60px 0;
+          width: 600px;
+        }
+        .count {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 110px;
+          height: 22px;
+          border: 2px solid #010049;
+          margin: 40px 0;
+          h3 {
+            font-weight: 400;
+          }
+          button {
+            width: 30px;
+            height: 22px;
+            border: none;
+            background: #010049;
+            border-radius: 0;
+            color: white;
+            font-size: 25px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            cursor: pointer;
+          }
+        }
+        button {
+          width: 271px;
+          height: 51px;
+          border-radius: 5px;
+          border: 2px solid #010049;
+          background: none;
+          color: #010049;
+          font-weight: 600;
+          font-size: 17px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .modalB {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.8;
+    }
+    .blocks {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 550px;
+      height: 300px;
+      border-radius: 15px;
+      background-color: #010049;
+      h1 {
+        color: white;
+        font-weight: 400;
+        font-size: 28px;
+        text-align: center;
+        width: 70%;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 0px;
+        position: relative;
+        button {
+          font-size: 28px;
+          padding: 5px 35px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

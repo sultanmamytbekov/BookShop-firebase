@@ -1,0 +1,130 @@
+header {
+  background: #010049;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .user {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        h2 {
+          color: white;
+          font-size: 30px;
+          font-weight: 400;
+        }
+        div {
+          position: absolute;
+          right: 20px;
+          background-color: #fff;
+          top: 50px;
+          border: 1px solid;
+          border-radius: 10px;
+          padding: 10px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          gap: 10px;
+          transition: 0.1s;
+          p {
+            width: 70px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+      }
+      .blcok1 {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-right: 20px;
+        input {
+          width: 283px;
+          height: 45px;
+          border-radius: 7px;
+          padding-left: 15px;
+          margin-right: -40px;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          transition: 0.5s;
+        }
+        h2 {
+          display: flex;
+          align-items: center;
+          font-size: 29px;
+          color: #a4a4a4;
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+      .blcok2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        h1 {
+          font-size: 14px;
+          font-weight: 400;
+          color: white;
+        }
+        h2 {
+          color: white;
+          font-size: 22px;
+        }
+        div {
+          position: absolute;
+          top: 0%;
+          left: 85%;
+          transform: translate(-50%, -50%);
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background-color: red;
+          border: 2px solid white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            font-size: 11px;
+            font-weight: 500;
+            color: white;
+          }
+        }
+      }
+      .blcok3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          font-size: 14px;
+          font-weight: 400;
+          color: white;
+        }
+        h2 {
+          color: white;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

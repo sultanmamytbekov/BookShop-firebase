@@ -1,0 +1,238 @@
+#basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .basket {
+    h1 {
+      color: #19272e;
+      font-size: 44px;
+      font-weight: 400;
+      margin: 30px 0 10px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      span {
+        color: #818eea;
+      }
+    }
+    .text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      .block {
+        overflow-y: scroll;
+        height: 700px;
+        padding-right: 10px;
+        &::-webkit-scrollbar {
+          width: 6px; /* ширина полосы прокрутки */
+        }
+
+        /* Стили для трека прокрутки (фон) */
+        &::-webkit-scrollbar-track {
+          background: none; /* цвет фона */
+        }
+
+        /* Стили для ползунка (полосы прокрутки) */
+        &::-webkit-scrollbar-thumb {
+          background: #888; /* цвет полосы прокрутки */
+          height: 40px;
+          border-radius: 6px; /* радиус скругления углов */
+        }
+
+        /* Стили для ползунка при наведении */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555;
+          /* цвет полосы прокрутки при наведении */
+        }
+        &--blocks {
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          margin: 0 0 20px 0;
+          padding: 0 0 20px 0;
+          border-bottom: 2px solid #19272e4d;
+          width: 650px;
+          img {
+            width: 185px;
+            height: 270px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 30px;
+          }
+          &__text {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .block1 {
+              div {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                h1 {
+                  font-size: 28px;
+                  font-weight: 500;
+                  letter-spacing: 1px;
+                  color: #19272e;
+                  margin: 0;
+                  margin-top: 5px;
+                }
+                button {
+                  background: none;
+                  border: none;
+                  color: red;
+                  font-size: 17px;
+                  font-weight: 600;
+                  height: 19px;
+                  border-bottom: 1.9px solid red;
+                  margin-top: 10px;
+                  cursor: pointer;
+                }
+              }
+              p {
+                font-size: 18px;
+                font-weight: 300;
+                color: #757575;
+                margin-top: 15px;
+              }
+            }
+            .block2 {
+              h3 {
+                font-size: 20px;
+                font-weight: 400;
+                color: #19272e;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+              }
+              h2 {
+                font-size: 22px;
+                font-weight: 400;
+                color: #818eea;
+              }
+            }
+          }
+        }
+      }
+      .blocks1 {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        width: 450px;
+        height: 400px;
+        margin-top: 5px;
+        h1 {
+          margin: 0;
+          font-size: 25px;
+          font-weight: 500;
+          color: #19272e;
+        }
+        button {
+          width: 450px;
+          height: 50px;
+          background-color: #818eea;
+          border-radius: 10px;
+          border: none;
+          font-size: 18px;
+          font-weight: 600;
+          color: white;
+        }
+        &--text {
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          .df {
+            width: 100%;
+            height: 1px;
+            outline: black;
+            background: black;
+          }
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h3 {
+              font-size: 18px;
+              font-weight: 400;
+              color: black;
+            }
+            h2 {
+              font-size: 20px;
+              margin: 0;
+              font-weight: 400;
+              color: #19272e;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              span {
+                width: 26px;
+                height: 26px;
+                font-size: 26px;
+                color: black;
+              }
+            }
+            h4 {
+              font-size: 20px;
+              font-weight: 400;
+              color: #818eea;
+            }
+          }
+        }
+      }
+    }
+  }
+  .baskets {
+    width: 100vh;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 38px;
+      font-weight: 400;
+      color: #010049;
+    }
+    .router {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+      font-weight: 400;
+      color: #757575;
+      margin: 50px 0;
+      .span {
+        color: #757575;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          font-size: 23px;
+          transition: 0.3s;
+        }
+      }
+      .span1 {
+        color: #757575;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          font-size: 23px;
+          transition: 0.3s;
+        }
+      }
+      span {
+        color: black;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          font-size: 23px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

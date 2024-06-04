@@ -1,0 +1,112 @@
+#signUp {
+  .signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    margin-top: -30px;
+    .block {
+      width: 100%;
+      height: 50px;
+      background-color: rgb(255, 6, 6);
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      h1 {
+        padding-left: 20px;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 34px;
+        color: white;
+      }
+    }
+    h2 {
+      font-size: 35px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    h3 {
+      margin: 20px 0 11px 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: #302e2e;
+    }
+    button {
+      cursor: pointer;
+      width: 400px;
+      height: 55px;
+      background: white;
+      border: 3px solid black;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      img {
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+      }
+    }
+    input {
+      margin: 9px 0;
+      width: 380px;
+      height: 55px;
+      padding-left: 15px;
+      // background: white;
+      border: 3px solid black;
+      border-radius: 8px;
+      font-size: 19px;
+      font-weight: 500;
+      &:active {
+        border: 3px solid rgb(9, 159, 182);
+      }
+      &::placeholder {
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .home {
+      margin: 40px 0 20px 0;
+      border: none;
+      background: #302e2e;
+      color: white;
+      border-radius: 10px;
+    }
+  }
+}
+.input-container {
+  position: relative;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-0.5px);
+  }
+  20%,
+  80% {
+    transform: translateX(1px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-2px);
+  }
+  40%,
+  60% {
+    transform: translateX(2px);
+  }
+}
+.shake {
+  animation: shake 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
+}
